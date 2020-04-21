@@ -12,42 +12,44 @@
 
       gtag('config', 'UA-164003973-1');
     </script>
+    <script>
+      function darkmodeHandler(self) {
+      var target = document.querySelector('body');
+      if(self.value === 'dark') {
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        self.value = 'bright';
+
+        var alist = document.querySelectorAll('a')
+        i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'powderblue';
+          i = i + 1;
+        }
+      } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        self.value = 'dark';
+        var alist = document.querySelectorAll('a')
+        i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'blue';
+          i = i + 1;
+          }
+        }
+      }
+  </script>
 
   </head>
 
   <body>
-    <input type="button" value="dark" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'dark') {
-      target.style.backgroundColor='black';
-      target.style.color='white';
-      this.value = 'bright';
-
-      var alist = document.querySelectorAll('a')
-      i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'powderblue';
-        i = i + 1;
-      }
-    } else {
-      target.style.backgroundColor='white';
-      target.style.color='black';
-      this.value = 'dark';
-      var alist = document.querySelectorAll('a')
-      i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'blue';
-        i = i + 1;
-    }
-  }
-      ">
-
-      <h1><a href="index.html">은평 플레이리스트</a></h1>
-      <h2 style="color: powderblue;">
-      <img src="images/layer_1.png" width="40dp" /><strong></strong>
-        북한산 큰 숲, 은평</strong
-      >
-    </h2>
+    <input type="button" value="dark" onclick="darkmodeHandler(this);">
+      
+    <h1><a href="index.html">은평 플레이리스트</a></h1>
+    <h2 style="color: powderblue;">
+    <img src="images/layer_1.png" width="40dp" />
+    <strong>북한산 큰 숲, 은평</strong>
+  </h2>
 
     <ol>
       <li><a href="1.html">은평, Where?</a></li>
