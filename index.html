@@ -4,52 +4,56 @@
     <title>은평 플레이 리스트</title>
     <meta charset="utf-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164003973-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-164003973-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-164003973-1');
+      gtag("config", "UA-164003973-1");
     </script>
     <script>
       function darkmodeHandler(self) {
-      var target = document.querySelector('body');
-      if(self.value === 'dark') {
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        self.value = 'bright';
+        var target = document.querySelector("body");
+        if (self.value === "dark") {
+          target.style.backgroundColor = "black";
+          target.style.color = "white";
+          self.value = "bright";
 
-        var alist = document.querySelectorAll('a')
-        i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'powderblue';
-          i = i + 1;
-        }
-      } else {
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        self.value = 'dark';
-        var alist = document.querySelectorAll('a')
-        i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'blue';
-          i = i + 1;
+          var alist = document.querySelectorAll("a");
+          i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "powderblue";
+            i = i + 1;
+          }
+        } else {
+          target.style.backgroundColor = "white";
+          target.style.color = "black";
+          self.value = "dark";
+          var alist = document.querySelectorAll("a");
+          i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "blue";
+            i = i + 1;
           }
         }
       }
-  </script>
-
+    </script>
   </head>
 
   <body>
-    <input type="button" value="dark" onclick="darkmodeHandler(this);">
-      
+    <input type="button" value="dark" onclick="darkmodeHandler(this);" />
+
     <h1><a href="index.html">은평 플레이리스트</a></h1>
     <h2 style="color: powderblue;">
-    <img src="images/layer_1.png" width="40dp" />
-    <strong>북한산 큰 숲, 은평</strong>
-  </h2>
+      <img src="images/layer_1.png" width="40dp" />
+      <strong>북한산 큰 숲, 은평</strong>
+    </h2>
 
     <ol>
       <li><a href="1.html">은평, Where?</a></li>
@@ -57,45 +61,63 @@
       <li><a href="3.html">놀거리</a></li>
       <li><a href="4.html">볼거리</a></li>
     </ol>
-    <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/MHDyhKbhNXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p align="middle">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/MHDyhKbhNXE"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </p>
-    <p>
-      <div id="disqus_thread"></div>
-      <script>
-
+    <div id="disqus_thread"></div>
+    <script>
       /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
       /*
       var disqus_config = function () {
       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
       */
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://epplaylist.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://epplaylist.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
       })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
 
-      <script id="dsq-count-scr" src="//epplaylist.disqus.com/count.js" async></script>
+    <script
+      id="dsq-count-scr"
+      src="//epplaylist.disqus.com/count.js"
+      async
+    ></script>
 
-      <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5e9cf71035bcbb0c9ab2c04e/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5e9cf71035bcbb0c9ab2c04e/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>
